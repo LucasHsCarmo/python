@@ -15,3 +15,20 @@ mensagem “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o
 conceito for D ou E.
 """
 
+nt1 = float(input("\nInforme a 1° nota: "))
+nt2 = float(input("Informe a 2° nota: "))
+
+media = (nt1+nt2) / 2
+
+if(media >= 0 and media < 4):
+  print("\nConceito E -> Aluno reprovado!")
+elif(media >= 4 and media < 6):
+  print("\nConceito D -> Aluno reprovado!")
+elif(media >= 6 and media < 7.5):
+  print("\nConceito C -> Aluno aprovado!")
+elif(media >= 7.5 and media < 9):
+  print("\nConceito B -> Aluno aprovado!")
+elif(media >= 9 and media <= 10):
+  print("\nConceito A -> Aluno aprovado!")
+else:
+  print("\nNota incorreta!")
